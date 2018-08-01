@@ -88,3 +88,7 @@ Route::get('/middleware/{age}', function($age) {
 Route::get('/pages/contact', 'PagesController@contactPage');
 
 Route::get('/pages/middleware/{age}', 'PagesController@middlewareAgePage');
+
+
+//
+Route::get('/crushes', 'CrushesController@index');
