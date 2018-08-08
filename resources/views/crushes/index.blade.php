@@ -17,6 +17,8 @@
 			<td> {{ $crush->contact_number}} </td>
 			<td> <a href="{{ route('crushes.id.edit', array('id'=>$crush->id)) }}">Edit </a> &nbsp; &nbsp;
 			<a href="{{ route('crushes.id.destroy', array('id'=>$crush->id)) }}">Delete </a>
+			&nbsp; &nbsp;
+			<a href="{{ route('crushes.id.show', array('id'=>$crush->id)) }}">Show </a>
 			 </td> 
 		</tr>
 		@endforeach
