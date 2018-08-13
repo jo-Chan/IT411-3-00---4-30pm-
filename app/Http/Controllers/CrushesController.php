@@ -59,7 +59,6 @@ class CrushesController extends Controller
         $crush = Crush::find($id);
 
         return view('crushes.show', array('crush'  =>$crush,
-                                            'add' =>"Add Qualities",
                                             'back' => route('crushes.index')
                                             )
     );
@@ -126,11 +125,12 @@ class CrushesController extends Controller
         $crush->save();
     }
 
-      public function add()
-    {
-        $crush = new Crush();
-        return view('crushes.add', array('crush'=>$crush,
-                                            'action'=>route('crushes.add'),
-                                            'submit_text'=>"Create Crush"));
-    }
+      /*    public function add()
+        {
+            $crush = new Crush();
+            return view('qualities.create', array('crush'=>$crush,
+                                                'action'=>route('qualities.create'),
+                                                'submit_text'=>"Create Crush"));
+        }
+        */
 }

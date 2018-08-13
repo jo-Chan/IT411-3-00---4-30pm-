@@ -106,5 +106,8 @@ Route:: get('/crushes/{id}/destroy', 'CrushesController@destroy')->name('crushes
 
 Route:: get('/crushes/{id}/show', 'CrushesController@show')->name('crushes.id.show');
 
-Route:: get('/crushes/{id}/add', 'CrushesController@add')->name('crushes.id.add');
+
+Route:: get('/crushes/{id}/qualities/create', 'QualitiesController@create')->name('crushes.id.qualities.create');
+
+Route:: post('/crushes/{id}/qualities/store', 'QualitiesController@store')->name('crushes.id.qualities.store');
 

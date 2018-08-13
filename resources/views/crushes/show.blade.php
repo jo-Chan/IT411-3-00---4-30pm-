@@ -7,7 +7,7 @@
     <br>
 	<label>Qualities:</label>
 	<br><br>
-	<button type="submit"> <a href="{{ $add }}"> Add Qualities </a> </button>
+	<button type="submit"> <a href="{{ route('crushes.id.qualities.create', array('id'=>$crush->id) ) }}"> Add Qualities </a> </button>
 	<button type="back"> <a href="{{ $back }}"> Back </a> </button>
 
 	<br/>
